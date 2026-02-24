@@ -2,6 +2,10 @@ package main;
 
 import Entites.Animal;
 import Entites.Zoo;
+import Entites.Aquatic;
+import Entites.Terrestrial;
+import Entites.Dolphin;
+import Entites.Penguin;
 
 public class Main {
 
@@ -15,7 +19,17 @@ public class Main {
         Animal a2 = new Animal("Tiger", "Sheru", 4, true);
         Animal a3 = new Animal("Elephant", "Dumbo", 10, true);
         Animal a4 = new Animal("Lion", "Simba", 5, true);
+        Aquatic aq1= new Aquatic("3awem",2,"cephalopod","coral reefs");
+        Terrestrial ter1= new Terrestrial("Machey",3,"primate",4);
+        Penguin p1= new Penguin("Penguins",3,"Batri9",100);
+        Dolphin d1= new Dolphin("Dolphins",4,"delphin",60);
 
+        System.out.println(aq1.toString());
+        System.out.println(ter1.toString());
+        System.out.println(p1.toString());
+        System.out.println(d1.toString());
+        d1.Swim();
+        p1.Swim();
 
         zoo1.addAnimal(a1);
         zoo1.addAnimal(a2);
