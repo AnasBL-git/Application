@@ -28,6 +28,17 @@ public class Employe {
     public void setGrade(int grade) {this.grade = grade;}
 
     @Override
+    public boolean equals(Object o) {
+
+        if (this == o) return true;
+
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Employe employe = (Employe) o;
+
+        return id == employe.id;
+    }
+    @Override
     public String toString() {
         return id+" "+nom+" "+prenom+" "+nomDept+" "+grade;
     }
